@@ -1,0 +1,121 @@
+/* Nav Bar */
+/* Base styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and nav-links */
+    align-items: center;
+    background: transparent; /* Semi-transparent dark background */
+    padding: 10px 0%; /* Padding for a more spacious feel */
+    color: #ffffff; /* White text color */
+    position: absolute; /* Fixed position for the navbar */
+    padding-right:15px;
+    top: 0;
+    left: -15px;
+    right: 0;
+    height: 60px;
+    z-index: 1000; /* Ensure it stays on top */
+    width: 100vw;
+    transition: background-color 0.3s, padding 0.3s; /* Smooth transition */
+
+}
+
+/* Style changes when scrolling */
+#navbar.scrolled {
+    background-color: rgba(20, 20, 20, 0.9); /* Darken background when scrolled */
+    padding: 8px 5%; /* Reduce padding when scrolled */
+}
+
+/* Styling for the logo */
+
+.tesla-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+  padding-left: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center logo within its container */
+  position: relative; /* For the pseudo-element */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.logo img {
+  display: block;
+  transition: transform 0.3s ease;
+  height: auto;
+  width: 40px; /* Adjust the width to fit your logo */
+}
+
+.logo img:hover {
+  transform: scale(1.3); /* Scales the logo slightly on hover */
+}
+
+
+
+/* For TESLA in center */
+
+.logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 240px;     
+}
+
+.logo-name img{
+  height: 30px;
+  width: auto;
+  margin-left: 20px;
+  border: 2px solid transparent;
+}
+
+
+/* Styling for navigation links container */
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap nav links on smaller screens */
+    justify-content: center; /* Center the nav-links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for individual navigation items */
+.nav-item {
+    margin: 0 15px; /* Spacing between nav items */
+    text-decoration: none;
+    color: #171a20; /* White text */
+    font-weight: 600; /* Slightly bolder font */
+    font-size: 16px; /* Medium font size */
+    text-transform: uppercase; /* Uppercase text */
+    position: relative; /* Relative positioning for pseudo-elements */
+    padding: 5px 0; /* Padding for hover effect */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover transitions */
+}
+
+/* Styling for underline effect on hover */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thin underline on hover */
+    background: #e50914; /* Netflix red underline */
+    transform: scaleX(0); /* Start with no width */
+    transform-origin: right;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effects for navigation items */
+.nav-item:hover::after {
+    transform: scaleX(1); /* Expand underline on hover */
+    transform-origin: left;
+}
+
+.nav-item:hover {
+    color: #e50914; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}

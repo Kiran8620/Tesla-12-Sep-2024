@@ -1,0 +1,70 @@
+/* Copy Section */
+
+.tcl-rich-text a{
+    color: purple;
+  }
+  
+  .tcl-rich-text a:hover{
+    text-decoration: dashed;
+    color: #e5e5e5;
+  }
+  
+  /* Footer Container */
+  .footer-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px; /* Padding to keep content away from edges */
+  }
+  
+  /* Footer Text */
+  .footer-container p {
+      margin: 10px 0;
+      font-size: 18px; /* Larger font size for readability */
+      line-height: 1.6; /* Increased line height */
+  }
+  
+  /* Footer Links */
+  .footer-links {
+      margin: 30px 0; /* Increased margin for spacing */
+      display: flex;
+      justify-content: center; /* Center the links */
+      flex-wrap: wrap; /* Wrap links on smaller screens */
+  }
+  
+  .footer-link, .social-link {
+      color: #e50914; /* Link color */
+      text-decoration: none;
+      margin: 0 15px; /* More spacing between links */
+      font-weight: 600; /* Slightly bolder text */
+      font-size: 16px; /* Medium font size */
+      transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .footer-link:hover, .social-link:hover {
+      color: #ffffff; /* Change color on hover */
+      transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Social Icons */
+  .footer-links .social-link {
+      font-size: 20px; /* Larger font size for icons */
+  }
+  
+  .footer-links .social-link::before {
+      content: ''; /* Placeholder for icons */
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px; /* Space between icon and text */
+      background-size: cover;
+      vertical-align: middle; /* Align icons with text */
+  }
+  
+  /* Twitter Icon */
+  .footer-links .social-link.twitter::before {
+      background-image: url('path/to/twitter-icon.svg'); /* Twitter icon */
+  }
+  
+  /* Adjustments for Smaller Screens */
+  
+  
